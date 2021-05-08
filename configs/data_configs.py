@@ -3,6 +3,13 @@ from configs.paths_config import dataset_paths
 
 
 DATASETS = {
+	'unmask_encode': {
+		'transforms': transforms_config.UnmaskTransforms,
+		'train_source_root': dataset_paths['ffhq_train_masked'],
+		'train_target_root': dataset_paths['ffhq_train_unmasked'],
+		'test_source_root': dataset_paths['ffhq_test_masked'],
+		'test_target_root': dataset_paths['ffhq_test_unmasked'],
+	},
 	'ffhq_encode': {
 		'transforms': transforms_config.EncodeTransforms,
 		'train_source_root': dataset_paths['ffhq'],

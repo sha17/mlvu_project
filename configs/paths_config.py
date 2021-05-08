@@ -6,9 +6,14 @@ dataset_paths = {
 	'celeba_train_segmentation': '',
 	'celeba_test_segmentation': '',
 	'ffhq': '',
+        'ffhq_train_masked':'mlvu/ffhq_train_masked',
+        'ffhq_train_unmasked':'mlvu/ffhq_train_unmasked',
+        'ffhq_test_masked':'mlvu/ffhq_test_masked',
+        'ffhq_test_unmasked':'mlvu/ffhq_test_unmasked',
 }
 
 model_paths = {
+	'unmask_encode': 'pretrained_models/unmask_ffhq_encode.pt',
 	'stylegan_ffhq': 'pretrained_models/stylegan2-ffhq-config-f.pt',
 	'ir_se50': 'pretrained_models/model_ir_se50.pth',
 	'circular_face': 'pretrained_models/CurricularFace_Backbone.pth',
